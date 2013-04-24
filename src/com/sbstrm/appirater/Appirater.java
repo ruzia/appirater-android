@@ -165,7 +165,7 @@ public class Appirater {
                 }
             } else {
                 long significantEventCount = prefs.getLong(PREF_SIGNIFICANT_EVENT_COUNT, 0);
-                if (mContext.getResources().getInteger(R.integer.appirator_significant_events_until_prompt) <= significantEventCount) {
+                if (mContext.getResources().getInteger(R.integer.appirator_significant_events_until_prompt) < significantEventCount) {
                     showRateDialog(mContext, editor);
                     return;
                 }
