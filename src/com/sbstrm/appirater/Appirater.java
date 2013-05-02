@@ -1,6 +1,5 @@
 package com.sbstrm.appirater;
 
-import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
@@ -57,7 +56,6 @@ public class Appirater {
         editor.commit();
     }
 
-    @SuppressLint("NewApi")
     private static void showRateDialog(final Context mContext, final SharedPreferences.Editor editor) {
         String appName = mContext.getString(R.string.appirator_app_title);
         final Dialog dialog = new Dialog(mContext);
